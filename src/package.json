@@ -1,0 +1,36 @@
+{
+  "name": "ngx-api-manager",
+  "version": "0.2.7",
+  "description": "Module for configuration http requests",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Talalaev/ngx-api-manager"
+  },
+  "author": {
+    "name": "Mike T.",
+    "email": "ja-morning@yandex.ru"
+  },
+  "keywords": [
+    "angular",
+    "http-api",
+    "api",
+    "rest",
+    "angular-service",
+    "ngx-api",
+    "request-configuration",
+    "api-service"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Talalaev/ngx-api-manager/issues"
+  },
+  "main": "ngx-api-manager.umd.js",
+  "module": "ngx-api-manager.js",
+  "jsnext:main": "ngx-api-manager.js",
+  "typings": "ngx-api-manager.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
