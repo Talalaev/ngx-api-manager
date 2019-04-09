@@ -19,7 +19,7 @@
   },
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
-    "strictMetadataEmit": true,
+    "strictMetadataEmit": false,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "ngx-api-manager.js",
     "flatModuleId": "ngx-api-manager"

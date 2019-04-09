@@ -51,9 +51,12 @@ export * from './loading-stream.service';
 })
 export class NgxApiManager {
   static forRoot(options: {storages?: ISApi.storages, configs?: Array<ISApi.apiConfig>} = {}): ModuleWithProviders {
-    let configObj: any = {
+    return {
       ngModule: NgxApiManager,
       providers: [
+        ...options.configs.map((config: ISApi.apiConfig) => {
+          return { provide: API_CONFIG, useValue: config, multi: true };
+        }),
         {
           provide: API_SERVICE,
           // не забывайте при передаче в deps сервиса класс является маркером.
@@ -87,10 +90,5 @@ export class NgxApiManager {
         }
       ]
     };
-    for (let config of options.configs) {
-      configObj.providers.unshift({ provide: API_CONFIG, useValue: config, multi: true });
-    }
-
-    return configObj;
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "ngx-api-manager",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Module for configuration http requests",
   "repository": {
     "type": "git",
